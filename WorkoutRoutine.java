@@ -2,7 +2,7 @@ public class WorkoutRoutine {
     private String routineName;
     private int durationInMinutes;
     private int caloriesBurned;
-    private String routineType; // Тип тренировки (Cardio/Strength)
+    private String routineType;
 
     public WorkoutRoutine(String routineName, int durationInMinutes, int caloriesBurned, String routineType) {
         this.routineName = routineName;
@@ -25,10 +25,6 @@ public class WorkoutRoutine {
 
     public String getRoutineType() {
         return routineType;
-    }
-
-    public double getCaloriesPerMinute() {
-        return (double) caloriesBurned / durationInMinutes;
     }
 
     @Override
